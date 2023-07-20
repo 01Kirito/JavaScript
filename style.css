@@ -112,6 +112,7 @@ body {
   .quote-container {
     max-width: 70vw !important;
   width: 98vw !important;
+  min-width: 40vw !important;
   }
   
   .quote-container div.quote {
@@ -145,7 +146,7 @@ h2{
 
 .buttons {
   margin-left: -40px;
-width:128% !important;
+width:130% !important;
 }
 
 .buttons> div > a > img {
