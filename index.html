@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="quote-container" id="quote-container">
+      <img class="startquote" src="download.png" alt="" srcset="" />
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <div class="quote" id="quoteText"></div>
+      <img class="endquote" src="download.png" alt="" srcset="" />
+
+      <div class="buttons">
+        <div>
+          <a  id="tweet"
+            ><img src="icon-png-tw.webp" alt="" srcset=""
+          /></a>
+          <a  id="copy"
+            ><img src="copy-solid.svg" alt="" srcset=""
+          /></a>
+        </div>
+
+        <p class="" id="quoteAuthor"></p>
+        <a  class="new" id="newQuote"><p>New Quote</p></a>
+      </div>
+    </div>
+
+    <div class="loader" id="loader" ></div>
+    <div class="copied" id="textCopy" ><div> Quote Copied</div></div>
+    <script
+      src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v13.0&appId=YOUR_APP_ID&autoLogAppEvents=1"
+      async
+      defer></script>
+    <script type="text/javascript" src="main.js"></script>
+  </body>
+</html>
