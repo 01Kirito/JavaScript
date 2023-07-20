@@ -12,7 +12,7 @@ body {
   margin-left: auto;
   margin-top: 40vh;
   min-height: 15vh;
-  max-height: 40vh;
+  max-height: 70vh;
   max-width: 60vw;
   width: fit-content;
   background-color: white;
@@ -31,8 +31,8 @@ body {
 
 .quote-container img.startquote {
   width: 40px;
-  display: inline;
   margin-top: -20px;
+  margin-left: -30px;
 }
 .quote-container img.endquote {
   width: 40px;
@@ -40,7 +40,7 @@ body {
   margin-bottom: -30px;
 }
 .quote-container div.quote {
-  width: fit-content;
+  width: 220% !important;
   padding: 0 20px 0 20px;
   font-size: x-large;
 }
@@ -109,30 +109,34 @@ body {
 }
 
 @media screen and (max-width: 800px) {
+  .quote-container {
+    max-width: 70vw !important;
+  width: 98vw !important;
+  }
+  
   .quote-container div.quote {
     font-size: large;
     /* margin-left: 20px; */
-  }
-
-  .quote-container img.startquote {
-    width: 30px;
-  }
-  .quote-container img.endquote {
-    width: 30px;
   }
 
   .copied div{
   width: 40%;
 }
 
+.quote-section {
+  width: 110%;
+  margin-left: -20px;
+}
+
 .quote-container img.startquote {
-  width: 40px;
-  display: inline;
-  margin-left: -20px !important;
+  width: 30px !important;
+  margin-top: -20px;
+  margin-left: -18px;
 }
 .quote-container img.endquote {
-  width: 40px;
-  margin-left: 96%;
+  width: 30px !important;
+  transform: rotate(180deg);
+  margin-bottom: -30px;
 }
 
 h2{
@@ -141,7 +145,12 @@ h2{
 
 .buttons {
   margin-left: -40px;
-width:123% ;
+width:128% !important;
+}
+
+.buttons> div > a > img {
+  width: 14px;
+  height: 14px;
 }
 
 .loader{
