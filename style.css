@@ -14,6 +14,7 @@ body {
   min-height: 15vh;
   max-height: 70vh;
   max-width: 60vw;
+  min-width: 40vw;
   width: fit-content;
   background-color: white;
   border-radius: 2em;
@@ -102,6 +103,10 @@ body {
     animation: fadeInOut 1.2s infinite;
 }
 
+h2{
+  text-align: center;
+}
+
 @keyframes fadeInOut {
   0% { opacity: 0; }
   50% { opacity: 1; }
@@ -142,6 +147,9 @@ body {
 
 h2{
   font-size: medium;
+}
+h2.author{
+  margin-top: 30px !important;
 }
 
 .buttons {
