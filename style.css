@@ -3,7 +3,6 @@
 body {
   background-color: #000000;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 40 40'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23b598e2' fill-opacity='0.55'%3E%3Cpath d='M0 38.59l2.83-2.83 1.41 1.41L1.41 40H0v-1.41zM0 1.4l2.83 2.83 1.41-1.41L1.41 0H0v1.41zM38.59 40l-2.83-2.83 1.41-1.41L40 38.59V40h-1.41zM40 1.41l-2.83 2.83-1.41-1.41L38.59 0H40v1.41zM20 18.6l2.83-2.83 1.41 1.41L21.41 20l2.83 2.83-1.41 1.41L20 21.41l-2.83 2.83-1.41-1.41L18.59 20l-2.83-2.83 1.41-1.41L20 18.59z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-  min-height: 100vh;
   font-family: "EB Garamond", serif;
   color: rgb(180, 93, 187);
 }
@@ -11,50 +10,56 @@ body {
 .quote-container {
   margin-right: auto;
   margin-left: auto;
-  margin-top: 30vh;
-  min-height: 20vh;
-  max-height: fit-content;
-  max-width: 50vw;
-  min-width: min-content;
+  margin-top: 40vh;
+  min-height: 15vh;
+  max-height: 40vh;
+  max-width: 60vw;
+  width: fit-content;
   background-color: white;
   border-radius: 2em;
   padding-left: 40px;
   padding-right: 40px;
   padding-top: 40px;
 }
+
+.quote-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: baseline;
+  padding: 0 0 3vh 0;
+}
+
 .quote-container img.startquote {
   width: 40px;
   display: inline;
+  margin-top: -20px;
 }
 .quote-container img.endquote {
-  display: flex;
   width: 40px;
   transform: rotate(180deg);
-  position: relative;
-  margin-left: 96%;
+  margin-bottom: -30px;
 }
 .quote-container div.quote {
-  width: 92%;
-  margin-left: 40px;
+  width: fit-content;
+  padding: 0 20px 0 20px;
   font-size: x-large;
-  text-align: center;
-  display: flex;
-  /* margin-left: 20px; */
 }
 
 .buttons {
-  margin-top: auto;
+  margin-top: auto ;
+  margin: 0 auto;
+  width: 90% ;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   margin-top: 30px;
   padding-bottom: 10px;
 }
-.buttons > a.new {
+.buttons >div > a.new {
   text-decoration: unset;
   padding-left: 10px;
   padding-right: 10px;
-  padding-bottom: 1px;
-  padding-top: 0.1px;
+  padding-bottom: 6px;
+  padding-top: 6px;
   background-color: antiquewhite;
   border-radius: 1.4em;
   cursor: pointer;
@@ -64,6 +69,7 @@ body {
   width: 20px;
   height: 20px;
   padding: 10px;
+  margin-top: -10px;
   background-color: rgb(255, 0, 170);
   border-radius: 0.8em;
 }
@@ -119,15 +125,36 @@ body {
   width: 40%;
 }
 
+.quote-container img.startquote {
+  width: 40px;
+  display: inline;
+  margin-left: -20px !important;
+}
+.quote-container img.endquote {
+  width: 40px;
+  margin-left: 96%;
 }
 
+h2{
+  font-size: medium;
+}
 
+.buttons {
+  margin-left: -40px;
+width:123% ;
+}
+
+.loader{
+  margin: 42vh 34vw !important;
+}
+
+}
 /* Loader animation */
 
 .loader{
-  margin: 45vh 45vw;
+  margin: 43vh 45vw;
   border: 16px solid white;
-  border-top: 16px solid #333;
+  border-top: 16px solid #fa3bd1;
   border-radius: 50%;
   width: 120px;
   height: 120px;
